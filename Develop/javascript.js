@@ -37,15 +37,8 @@ $(document).ready(function(){
     $('#17').siblings('.description').val(localStorage.getItem('17'));
 
 
+   //here we need to be able to set the color of the text area rather than time block
    
-    //keep track of hour being displayed to change color of row
-    
-    
-    //get current hour and compare it to id of our div ( 9 or 10 or 11)
-    //set a variable for that and loop throiugh each one
-    // set attribute to a timeblock ()
-
-    
     function colorTime (){
         var currentHour = moment().hour();
         $('.time-block').each(function(){
