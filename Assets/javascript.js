@@ -16,6 +16,7 @@ $(document).ready(function(){
     //capture text field to a variable by clicking save
     
     $('.saveBtn').on('click', function(){
+        console.log('this is a test')
         var text = $(this).parent().siblings('.description').val()
         console.log(text);
 
