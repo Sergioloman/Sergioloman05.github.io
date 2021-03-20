@@ -2,7 +2,7 @@ $(document).ready(function(){
     //display current day and time
     $('#currentDay').text(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"));
     //update time live
-
+    
     function updateTime(){
         //take current time add 1 second plus current time
         setInterval(() => {
@@ -10,23 +10,19 @@ $(document).ready(function(){
         }, 1000);
     }; 
     updateTime();
-   
-   ;
     
     //capture text field to a variable by clicking save
     
     $('.saveBtn').on('click', function(){
-        console.log('this is a test')
-        var text = $(this).parent().siblings('.description').val()
-        console.log(text);
+        var text = $(this).siblings('.description').val();
+        console.log(text);  
 
-        var time = $(this).parent().siblings('.hour').attr('id')
+        var time = $(this).siblings('.hour').attr('id');
         console.log(time);
         //add data to local storage
-
         localStorage.setItem(time, text);
-    }) 
-    
+
+    }); 
     $('#9').siblings('.description').val(localStorage.getItem('9'));
     $('#10').siblings('.description').val(localStorage.getItem('10'));
     $('#11').siblings('.description').val(localStorage.getItem('11'));
