@@ -1,29 +1,29 @@
 $(document).ready(function(){
     //display current day and time
     $('#currentDay').text(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"));
-    
-    //update our timer in real time
+    //update time live
+
     function updateTime(){
+        //take current time add 1 second plus current time
         setInterval(() => {
         $('#currentDay').text(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"))
         }, 1000);
     }; 
     updateTime();
-
-    ;
    
-    //capture text field to local storage
+   ;
+    
+    //capture text field to a variable by clicking save
+    
     $('.saveBtn').on('click', function(){
-        
-        //select the description
         var text = $(this).parent().siblings('.description').val()
         console.log(text);
-        //select the time
+
         var time = $(this).parent().siblings('.hour').attr('id')
         console.log(time);
-        //now that we have selected each parameter, add data to local storage
+        //add data to local storage
+
         localStorage.setItem(time, text);
-       
     }) 
     
     $('#9').siblings('.description').val(localStorage.getItem('9'));
