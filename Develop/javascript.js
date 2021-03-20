@@ -41,7 +41,7 @@ $(document).ready(function(){
    
     function colorTime (){
         var currentHour = moment().hour();
-        $('.time-block').each(function(){
+        $('.description').each(function(){
             var blockHour = parseInt($(this).attr('id'));
             if (blockHour < currentHour){
                 $(this).addClass('past');
