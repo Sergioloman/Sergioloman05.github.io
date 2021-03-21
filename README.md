@@ -30,5 +30,5 @@ feel free to read through the JS and HTML files as they have handy and useful co
 Thank you, and happy coding!
 ___________________________
 
-![alt text](./assets/images/screenshot1.PNG)
+![screenshot](./assets/images/screenshot1.PNG)
 
