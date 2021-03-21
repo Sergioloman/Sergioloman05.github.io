@@ -7,7 +7,6 @@ Users are able to edit such text fields and save them by clicking on the lock it
 
 ###The Tech
 
-
 **Bootstrap**
 Bootstrap allows us to quickly create text fields and perfectly aligned sections and tables. We are going to be using the *textarea* element to quickly create and gather the user input.
 
@@ -30,5 +29,5 @@ feel free to read through the JS and HTML files as they have handy and useful co
 Thank you, and happy coding!
 ___________________________
 
-![screenshot](./assets/images/screenshot1.PNG)
+![screenshot](./Assets/images/screenshot1.PNG)
 
