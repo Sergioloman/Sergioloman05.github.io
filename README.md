@@ -1,46 +1,34 @@
-# 05 Third-Party APIs: Work Day Scheduler
+# Daily Scheduler
+**Challenge #5**
 
-Create a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+Welcome to my daily scheduler, this is a simple application that enables users to simple add a task or appointment in the most appropiate timeslot for them. 
 
-The starter code uses the [Moment.js](https://momentjs.com/) library to work with date and time, but feel free to use a different JavaScript solution to handle this functionality since Moment.js is considered a "legacy" project. Learn more about these other solutions in the [Moment.js project status page.](https://momentjs.com/docs/#/-project-status/)
+Users are able to edit such text fields and save them by clicking on the lock item so items remain after reloading/closing the site.
 
-## User Story
+###The Tech
 
-```
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
 
-## Acceptance Criteria
+**Bootstrap**
+Bootstrap allows us to quickly create text fields and perfectly aligned sections and tables. We are going to be using the *textarea* element to quickly create and gather the user input.
 
-```
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
+**MomentJS**
+Moment JS allows us to easily insert the current time into our project. We are able to change the color of our textarea fields according to whether they are in the past - present -future using javascript + JQuery
 
-The following animation demonstrates the application functionality:
 
-![day planner demo](./Assets/05-third-party-apis-homework-demo.gif)
+**JQuery**
+JQuery saves us lots of time and code by simplyfying lots of the syntax around our project. Below are the most handy methods we encountered during this project:
 
-## Review
+*siblings() and Tree Traversal methods* 
+- This method allowed us to quickly select elements and relate them to neighboring ones by following a logical path of inheritance. See code lines 17-36 in JS file to see it in action.
 
-You are required to submit the following for review:
+*abreviations*
+-"$", "attr", "text","on", and "val", are all widely used in our code and considerable cut down in the number of lines we wrote.
 
-* The URL of the deployed application.
+###Bonus
+feel free to read through the JS and HTML files as they have handy and useful comments left for you to grab a good understanding of the logic used when making this project.
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+Thank you, and happy coding!
+___________________________
 
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+![alt text](./assets/images/screenshot1.PNG)
+
