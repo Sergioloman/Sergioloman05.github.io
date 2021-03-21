@@ -29,5 +29,5 @@ feel free to read through the JS and HTML files as they have handy and useful co
 Thank you, and happy coding!
 ___________________________
 
-![screenshot](./Assets/images/screenshot1.PNG)
+![screenshot](./Assets/images/screenshot2.PNG)
 

@@ -37,25 +37,32 @@ $(document).ready(function(){
 
    //Text area changes colors as time passes
     function colorTime (){
-        //get current hour
-        var currentHour = moment().hour();
+        //get current hour in 24hr format
+        var currentHour = moment().format("HH");
+        console.log(currentHour);
+               
         //loop each textarea. Compare its time ( using its ID) vs the current time
         $('.description').each(function(){
+            
             //convert string value of id to number
-            var blockHour = parseInt($(this).attr('id'));
-            //logic comparing ID vs currentHour. Use add/remove class to color them accordingly
-            if (blockHour < currentHour){
+            var blockHour = parseInt($(this).siblings().attr('id'));
+            
+            //logic comparing ID vs currentHour(transformed to a number). Use add/remove class to color them accordingly
+            if (blockHour < parseInt(currentHour)){
+                
                 $(this).addClass('past');
-            }
-            else if (blockHour === currentHour){
+             
+            }else if (blockHour === parseInt(currentHour)){
                 $(this).removeClass('past');
                 $(this).addClass('present');
+                
             }else{
                 $(this).removeClass('present');
                 $(this).removeClass('past');
                 $(this).addClass('future');
             }
         })
+        
     } 
     colorTime()
     //make it so we run the color function every hour
